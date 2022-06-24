@@ -32,7 +32,7 @@ int main() {
     discord::Core* core{};
     discord::Result dres;
 
-    discord::ClientId appId = 984552717051629628;
+    discord::ClientId appId = 0;
     dres = discord::Core::Create(appId, DiscordCreateFlags_Default, &core);
     if FAILED(dres) {
         std::cout << "Could not create a Discord instance";
